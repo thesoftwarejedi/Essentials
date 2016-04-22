@@ -56,6 +56,7 @@ public class EssentialsChatPlayerListenerLowest extends EssentialsChatPlayer
 		format = format.replace("{3}", team == null ? "" : team.getPrefix());
 		format = format.replace("{4}", team == null ? "" : team.getSuffix());
 		format = format.replace("{5}", team == null ? "" : team.getDisplayName());
+		format = format.replace("{6}", event.getPlayer().getLevel());
 		synchronized (format)
 		{
 			event.setFormat(format);
